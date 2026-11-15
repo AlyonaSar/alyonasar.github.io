@@ -216,3 +216,17 @@ body{padding-bottom:85px}
 /* Inline vector mascot: direct theme colors, no raster filter */
 .site-mascot,:root[data-theme="light"] .site-mascot{filter:none;color:var(--text);aspect-ratio:5/7;height:auto}
 .site-mascot svg{display:block;width:100%;height:auto;overflow:visible}
+
+/* Mascot contact assistant */
+.mascot-widget{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:20;display:flex;align-items:flex-end;gap:12px}
+.mascot-widget .site-mascot{position:relative;right:auto;bottom:auto;flex-shrink:0;background:none;border:0;padding:0;cursor:pointer}
+.mascot-widget .site-mascot:hover,.mascot-widget:focus-within .site-mascot,.mascot-widget:hover .site-mascot{animation:none;transform:scaleX(-1)}
+.mascot-widget .site-mascot:focus-visible{outline:2px solid var(--cream);outline-offset:4px;border-radius:8px}
+.mascot-contact{position:relative;width:min(300px,calc(100vw - 110px));padding:15px;background:var(--surface);color:var(--text);border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 6px 24px #0002;font-size:12px;line-height:1.6}
+.mascot-contact[hidden]{display:none}
+.mascot-contact::after{content:"";position:absolute;right:-6px;bottom:22px;width:10px;height:10px;background:var(--surface);border-right:1px solid var(--line-strong);border-top:1px solid var(--line-strong);transform:rotate(45deg)}
+.mascot-contact p{margin:0 0 10px}
+.mascot-contact-links{display:flex;flex-wrap:wrap;gap:7px}
+.mascot-contact-links a,.mascot-contact-links button{font:inherit;color:var(--text);background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:5px 8px;cursor:pointer;text-decoration:none}
+.mascot-contact-links a:hover,.mascot-contact-links button:hover{border-color:var(--cream)}
+@media(max-width:760px){.mascot-widget{right:10px;bottom:10px;gap:9px}}
