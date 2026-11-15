@@ -212,3 +212,7 @@ body{padding-bottom:85px}
 .email-copy{display:grid;place-items:center;width:30px;height:30px;padding:5px;flex-shrink:0}
 .email-copy svg{width:16px;height:16px;display:block}
 @media(max-width:760px){.site-mascot{right:10px}}
+
+/* Inline vector mascot: direct theme colors, no raster filter */
+.site-mascot,:root[data-theme="light"] .site-mascot{filter:none;color:var(--text);aspect-ratio:5/7;height:auto}
+.site-mascot svg{display:block;width:100%;height:auto;overflow:visible}
