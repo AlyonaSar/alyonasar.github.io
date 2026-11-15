@@ -220,7 +220,8 @@ body{padding-bottom:85px}
 /* Mascot contact assistant */
 .mascot-widget{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:20;display:flex;align-items:flex-end;gap:12px}
 .mascot-widget .site-mascot{position:relative;right:auto;bottom:auto;flex-shrink:0;background:none;border:0;padding:0;cursor:pointer}
-.mascot-widget .site-mascot:hover,.mascot-widget:focus-within .site-mascot,.mascot-widget:hover .site-mascot{animation:none;transform:scaleX(-1)}
+.mascot-widget .site-mascot:hover,.mascot-widget:focus-within .site-mascot,.mascot-widget:hover .site-mascot{animation:mascot-float 4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.mascot-widget .site-mascot,.mascot-widget .site-mascot:hover,.mascot-widget:focus-within .site-mascot,.mascot-widget:hover .site-mascot{animation:none}}
 .mascot-widget .site-mascot:focus-visible{outline:2px solid var(--cream);outline-offset:4px;border-radius:8px}
 .mascot-contact{position:relative;width:min(300px,calc(100vw - 110px));padding:15px;background:var(--surface);color:var(--text);border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 6px 24px #0002;font-size:12px;line-height:1.6}
 .mascot-contact[hidden]{display:none}
