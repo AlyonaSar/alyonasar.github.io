@@ -203,3 +203,12 @@ body{padding-bottom:85px}
 .footer-links{align-items:center}
 @media(max-width:760px){.site-mascot{width:43px;right:10px;bottom:10px}.footer-links{align-items:flex-start}.theme-toggle{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.site-mascot,.site-mascot:hover{animation:none}}
+
+/* Mascot orientation and compact copy control */
+.site-mascot{left:auto;right:max(16px,env(safe-area-inset-right));filter:invert(1);transform:scaleX(-1)}
+:root[data-theme="light"] .site-mascot{filter:none}
+@keyframes mascot-float{0%,100%{transform:translateY(0) scaleX(-1) rotate(-3deg)}50%{transform:translateY(-6px) scaleX(-1) rotate(3deg)}}
+@keyframes mascot-hop{0%,100%{transform:translateY(0) scaleX(-1)}45%{transform:translateY(-14px) scaleX(-1) rotate(-8deg)}}
+.email-copy{display:grid;place-items:center;width:30px;height:30px;padding:5px;flex-shrink:0}
+.email-copy svg{width:16px;height:16px;display:block}
+@media(max-width:760px){.site-mascot{right:10px}}
