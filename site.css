@@ -318,3 +318,5 @@ body>.footer{flex-shrink:0}
 .wishlist-decor{position:absolute;right:8px;bottom:12px;width:130px;font-size:38px;line-height:1.6;opacity:.35;transform:rotate(-14deg);z-index:-1;pointer-events:none}
 .wishlist-card .button.primary{background:#f5e8d5;color:#641f35;border-color:#f5e8d5}
 .about-page-grid section p+p{margin-top:12px}
+
+.business-card-flip{position:relative}.business-card-tooltip{position:absolute;z-index:2;left:50%;bottom:12px;transform:translate(-50%,6px);background:#21151b;color:#fff4e7;border:1px solid #d9bca3;padding:7px 12px;border-radius:6px;font-size:12px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}.business-card-flip:hover .business-card-tooltip,.business-card-flip:focus-visible .business-card-tooltip{opacity:1;transform:translate(-50%,0)}
