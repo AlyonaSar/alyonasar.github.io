@@ -311,3 +311,10 @@ body>.footer{flex-shrink:0}
 .business-card-hint{margin:12px 0;font-size:12px!important}
 .business-card-downloads{display:flex;flex-wrap:wrap;gap:8px}
 @media(prefers-reduced-motion:reduce){.business-card-inner{transition:none}}
+
+.about-inline-link{color:var(--cream);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.about-page-grid .wishlist-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#641f35,#923b59);color:#fff4e7;isolation:isolate}
+.about-page-grid .wishlist-card p{color:#fff0e3;max-width:75%;margin-bottom:16px}
+.wishlist-decor{position:absolute;right:8px;bottom:12px;width:130px;font-size:38px;line-height:1.6;opacity:.35;transform:rotate(-14deg);z-index:-1;pointer-events:none}
+.wishlist-card .button.primary{background:#f5e8d5;color:#641f35;border-color:#f5e8d5}
+.about-page-grid section p+p{margin-top:12px}
