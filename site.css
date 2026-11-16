@@ -239,3 +239,22 @@ body{padding-bottom:85px}
 body{min-height:100vh;display:flex;flex-direction:column}
 body>main{flex:1 0 auto}
 body>.footer{flex-shrink:0}
+
+/* Competency-based CV */
+.cv-page .cv-intro{max-width:760px;color:var(--body-muted);line-height:1.75;margin:16px 0 0}
+.cv-section{margin-top:42px}
+.cv-section>h2{font-size:clamp(19px,2.4vw,27px);margin:0 0 20px}
+.cv-page .listing-card{display:flex;flex-direction:column;gap:10px}
+.cv-page .listing-card h2{margin:0}
+.cv-page .listing-card ul{margin:0;padding-left:19px;color:var(--body-muted);font-size:14px;line-height:1.65}
+.cv-page .listing-card li+li{margin-top:7px}
+.cv-page .listing-card a{color:var(--cream);font-size:12px;margin-top:auto;padding-top:8px}
+.cv-experience{border-top:1px solid var(--line)}
+.cv-experience article{display:grid;grid-template-columns:minmax(130px,180px) 1fr;gap:8px 24px;padding:20px 0;border-bottom:1px solid var(--line)}
+.cv-experience article>span{grid-row:span 2;color:var(--muted);font-size:12px;padding-top:4px}
+.cv-experience h3,.cv-tools h3{font-size:15px;margin:0;line-height:1.6}
+.cv-experience p,.cv-tools p{font-size:14px;line-height:1.7;color:var(--body-muted);margin:0}
+.cv-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.cv-tools article{padding:17px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.cv-tools p{margin-top:6px}
+@media(max-width:760px){.cv-section{margin-top:30px}.cv-experience article{grid-template-columns:1fr;gap:7px}.cv-experience article>span{grid-row:auto}.cv-tools{grid-template-columns:1fr}}
