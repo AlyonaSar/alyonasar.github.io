@@ -339,3 +339,10 @@ body>.footer{flex-shrink:0}
 
 /* Give Sar more breathing room from viewport edges. */
 .mascot-widget{right:max(32px,calc(env(safe-area-inset-right) + 16px));bottom:max(30px,calc(env(safe-area-inset-bottom) + 16px))}@media(max-width:760px){.mascot-widget{right:max(20px,calc(env(safe-area-inset-right) + 10px));bottom:max(20px,calc(env(safe-area-inset-bottom) + 10px))}}
+
+/* Header preferences and high contrast */
+.header-controls{display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap}.contrast-toggle{font-size:17px;line-height:1.2;min-width:34px;min-height:30px;padding:4px 8px}.contrast-toggle[aria-pressed=true]{border-color:var(--text);outline:1px solid var(--text)}
+:root[data-contrast="high"]{--bg:#000;--surface:#080808;--surface-2:#111;--text:#fff;--muted:#fff;--secondary-text:#fff;--body-muted:#fff;--tag-text:#fff;--cream:#fff;--line:rgba(255,255,255,.65);--line-strong:#fff;--shared-bg:#111}
+:root[data-theme="light"][data-contrast="high"]{--bg:#fff;--surface:#fff;--surface-2:#f5f5f5;--text:#000;--muted:#000;--secondary-text:#000;--body-muted:#000;--tag-text:#000;--cream:#000;--line:rgba(0,0,0,.65);--line-strong:#000;--shared-bg:#fff}
+:root[data-contrast="high"] :is(p,h1,h2,h3,h4,li,small,label,caption,figcaption,dt,dd,th,td,a,span,output){color:var(--text)!important;opacity:1!important}:root[data-contrast="high"] .button.primary{color:var(--bg)!important}:root[data-contrast="high"] .button.primary *{color:inherit!important}:root[data-contrast="high"] a:focus-visible,:root[data-contrast="high"] button:focus-visible{outline:3px solid var(--text);outline-offset:4px}:root[data-contrast="high"] .wishlist-decor{opacity:.13!important}
+@media(max-width:760px){.header-controls{gap:5px}.header-controls .theme-toggle{padding:5px 8px}}
