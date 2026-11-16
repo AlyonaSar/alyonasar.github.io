@@ -258,3 +258,16 @@ body>.footer{flex-shrink:0}
 .cv-tools article{padding:17px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .cv-tools p{margin-top:6px}
 @media(max-width:760px){.cv-section{margin-top:30px}.cv-experience article{grid-template-columns:1fr;gap:7px}.cv-experience article>span{grid-row:auto}.cv-tools{grid-template-columns:1fr}}
+
+/* Project photography and editorial case layout */
+.project-photo{height:340px}
+.project-photo img{object-fit:contain;background:var(--surface-2)}
+.case-hero.hackathon-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:clamp(24px,5vw,72px)}
+.hackathon-intro{display:flex;flex-direction:column;gap:24px;min-width:0}
+.hackathon-figure{margin:0;min-width:0;align-self:start}
+.hackathon-figure img{display:block;width:100%;height:auto;border-radius:12px}
+.workshop-recordings{display:grid;gap:12px;margin:18px 0 24px}
+.workshop-recordings a{display:block;padding:16px;border:1px solid var(--line);border-radius:8px;text-decoration:none}
+.workshop-recordings a strong,.workshop-recordings a small{display:block}
+.workshop-recordings a small{color:var(--muted);margin-top:6px}
+@media(max-width:760px){.project-photo{height:clamp(260px,85vw,400px)}.case-hero.hackathon-hero{grid-template-columns:1fr}.hackathon-figure{max-width:560px;width:100%;margin-inline:auto}}
