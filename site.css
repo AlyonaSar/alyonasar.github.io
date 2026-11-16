@@ -285,3 +285,15 @@ body>.footer{flex-shrink:0}
 .service-details p a{color:var(--cream);overflow-wrap:anywhere}
 .service-details .button{margin-top:6px;max-width:100%;white-space:normal}
 @media(max-width:760px){.service-details{gap:14px}.service-details article{padding:20px}.service-details .button{width:100%;justify-content:center;text-align:center}}
+
+/* Categorized project catalog */
+.project-category-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 32px}
+.project-category-nav a{border:1px solid var(--line);border-radius:7px;padding:8px 12px;font-size:13px;color:var(--body-muted)}
+.project-category-nav a:hover{border-color:var(--cream);color:var(--cream)}
+.project-category{margin:0 0 36px;scroll-margin-top:24px}
+.project-category>h2{font-size:clamp(20px,2.5vw,28px);line-height:1.4;margin:0 0 14px}
+.project-category .listing-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:920px}
+.project-category .project-photo{height:340px}
+.listing-card-text-only{padding:0;min-height:180px}
+.project-card.souper .project-body{padding-top:24px}
+@media(max-width:760px){.project-category .listing-grid{grid-template-columns:1fr}.project-category .project-photo{height:clamp(260px,85vw,400px)}}
