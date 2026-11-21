@@ -12,7 +12,7 @@ p{margin:0 0 14px}
 .shell{width:min(calc(100% - 64px),var(--max));margin-inline:auto}
 .noise{display:none}
 .site-header{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
-.brand{font:11px/1.5 'Unbounded',sans-serif;letter-spacing:.03em;white-space:nowrap}
+.brand{font:16px/1.5 'Unbounded',sans-serif;letter-spacing:.03em;white-space:nowrap}
 nav{display:flex;flex-wrap:wrap;gap:22px}
 nav a,.lang{font-size:12px;color:#d7d4ce}
 .lang{white-space:nowrap;border:1px solid var(--line);border-radius:20px;padding:5px 10px}
@@ -145,7 +145,7 @@ h1{font-size:clamp(28px,3.2vw,42px);line-height:1.2;letter-spacing:-.035em}
  .shell{width:calc(100% - 32px)}
  .site-header nav{gap:10px 18px}
  nav a{font-size:12px;min-height:30px;display:flex;align-items:center}
- .brand{font-size:10px}.lang{font-size:11px}
+ .brand{font-size:13px}.lang{font-size:11px}
  .hero{grid-template-columns:minmax(0,1fr) 88px;padding-block:24px;gap:16px;align-items:start}
  .hero-visual{display:block;height:124px;width:88px;margin-top:4px}
  .hero h1{font-size:26px}
